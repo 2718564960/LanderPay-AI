@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShipFastAI - AI 驱动的产品部署与发布平台</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ShipFastAI 是一个 AI 驱动的一键式产品发布与部署平台。输入您的创意主题，AI 自动完成页面设计、功能开发与一键云端部署。让发布产品像聊天一样简单。">
+  <meta name="keywords" content="AI 网站生成, AI Landing Page, SaaS 部署, 自动部署, 网页模板, 独立开发者模板">
+  <meta name="author" content="2718564960@qq.com">
+  <link rel="canonical" href="https://github.com/2718564960">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ShipFastAI - AI 驱动的产品部署与发布平台">
+  <meta property="og:description" content="输入您的创意主题，AI 自动完成网页设计与部署。一键上线，像聊天一样发布你的 SaaS。">
+  <meta property="og:image" content="assets/preview.png">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Global Configuration File (Data Source) -->
+  <script src="config.js"></script>
+</head>
+<body>
+
+  <!-- Background Ambient Blobs -->
+  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header id="header-nav">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo-wrapper" id="nav-logo">
+        <!-- Injected via app.js -->
+      </a>
+      
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links-container">
+          <!-- Injected via app.js -->
+        </ul>
+      </nav>
+      
+      <!-- Nav Right Actions -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="lang-toggle" id="btn-lang-toggle" aria-label="Toggle Language" title="切换语言">
+          EN
+        </button>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="btn-theme-toggle" aria-label="Toggle Dark Mode" title="切换主题">
+          🌙
+        </button>
+        <!-- Checkout Router Shortcut (Standard / Pro Button) -->
+        <a href="#pricing" class="btn btn-primary" id="nav-cta-btn">
+          立即订阅
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- ================= VIEW 1: HOME PAGE (首页视图) ================= -->
+    <div id="home-view" class="view-section active">
+      
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <!-- Hero Left Column (Info) -->
+          <div class="hero-info-col">
+            <div class="hero-badge-wrapper">
+              <span class="hero-badge-tag" id="hero-badge-tag"></span>
+              <span class="hero-badge-text" id="hero-badge-text"></span>
+            </div>
+            
+            <h1 class="hero-title" id="hero-title-box">
+              <!-- Injected dynamically -->
+            </h1>
+            
+            <p class="hero-subtitle" id="hero-subtitle-box">
+              <!-- Injected dynamically -->
+            </p>
+            
+            <div class="hero-ctas">
+              <a href="#pricing" class="btn btn-primary btn-lg" id="hero-cta-primary"></a>
+              <a href="#features" class="btn btn-secondary btn-lg" id="hero-cta-secondary"></a>
+            </div>
+            
+            <div class="hero-stats" id="hero-stats-row">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+          
+          <!-- Hero Right Column (Interactive Build Simulator) -->
+          <div class="hero-interactive-col">
+            <div class="simulator-card">
+              <div class="simulator-header">
+                <div class="terminal-dots">
+                  <div class="terminal-dot red"></div>
+                  <div class="terminal-dot yellow"></div>
+                  <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-title" id="simulator-title">AI Build Console</div>
+                <div></div>
+              </div>
+              <div class="simulator-body">
+                <div class="simulator-input-area">
+                  <input type="text" class="simulator-input-field" id="simulator-input" placeholder="" />
+                  <button class="simulator-btn" id="simulator-submit-btn">
+                    <span id="simulator-btn-text">生成</span>
+                  </button>
+                </div>
+                <div class="terminal-console" id="simulator-console">
+                  <div class="console-line text-muted">> Console initialized. Ready to generate products.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Features Section -->
+      <section class="section-wrapper" id="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="features-title"></h2>
+            <p class="section-subtitle" id="features-subtitle"></p>
+          </div>
+          <div class="features-grid" id="features-grid-container">
+            <!-- Feature Cards Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Steps / Workflow Section -->
+      <section class="section-wrapper" id="workflow">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="workflow-title"></h2>
+            <p class="section-subtitle" id="workflow-subtitle"></p>
+          </div>
+          <div class="steps-grid" id="steps-grid-container">
+            <!-- Step Cards Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Template Showcase Section -->
+      <section class="section-wrapper" id="templates">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="templates-title"></h2>
+            <p class="section-subtitle" id="templates-subtitle"></p>
+          </div>
+          
+          <div class="category-tabs" id="templates-tabs-row">
+            <!-- Tabs Injected via app.js -->
+          </div>
+          
+          <div class="templates-grid" id="templates-grid-container">
+            <!-- Template Cards Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section-wrapper" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="testimonials-title"></h2>
+            <p class="section-subtitle" id="testimonials-subtitle">首发上线，好评如潮</p>
+          </div>
+          
+          <div class="testimonials-grid" id="testimonials-grid-container">
+            <!-- Testimonials Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ================= VIEW 2: PRICING & PAYMENT PAGE (价格与付费页面) ================= -->
+    <div id="pricing-view" class="view-section">
+      
+      <section class="pricing-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="pricing-title"></h2>
+            <p class="section-subtitle" id="pricing-subtitle"></p>
+          </div>
+          
+          <!-- Billing and Currency Controls -->
+          <div class="pricing-controls">
+            <!-- Monthly / Yearly Billing toggle -->
+            <div class="billing-switch">
+              <button class="switch-btn active" id="billing-btn-monthly">月付</button>
+              <button class="switch-btn" id="billing-btn-yearly">
+                年付 <span class="discount-badge" id="billing-discount-lbl">节省 20%</span>
+              </button>
+            </div>
+            
+            <!-- Currency selector dropdown -->
+            <div class="currency-selector">
+              <span class="currency-select-lbl" id="currency-select-lbl">选择结算货币:</span>
+              <select class="currency-dropdown" id="pricing-currency-dropdown">
+                <!-- Currency options populated via app.js -->
+              </select>
+            </div>
+          </div>
+          
+          <!-- Pricing Plans Cards -->
+          <div class="pricing-grid" id="pricing-plans-container">
+            <!-- Pricing Cards Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section (FAQ 常见问题) -->
+      <section class="section-wrapper" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="faq-title"></h2>
+            <p class="section-subtitle" id="faq-subtitle"></p>
+          </div>
+          
+          <div class="faq-list" id="faq-list-container">
+            <!-- FAQ Collapsibles Injected via app.js -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <div class="logo-wrapper" id="footer-logo">
+          <!-- Logo injected via app.js -->
+        </div>
+        <p class="footer-desc" id="footer-desc-text">
+          AI 驱动的一键式产品发布与部署平台。像聊天一样发布你的 SaaS。
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="GitHub" id="footer-github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="mailto:support@shipfastai.com" class="footer-social-btn" aria-label="Email" id="footer-email-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Links columns -->
+      <div class="footer-links-grid">
+        <div class="footer-link-group">
+          <h5 id="footer-menu-title-product">产品</h5>
+          <ul>
+            <li><a href="#features" class="footer-nav-item" data-target="#features">核心功能</a></li>
+            <li><a href="#workflow" class="footer-nav-item" data-target="#workflow">生成流程</a></li>
+            <li><a href="#templates" class="footer-nav-item" data-target="#templates">预置模板</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-group">
+          <h5 id="footer-menu-title-support">支持</h5>
+          <ul>
+            <li><a href="#pricing" class="footer-nav-item" data-target="#pricing">价格方案</a></li>
+            <li><a href="#faq" class="footer-nav-item" data-target="#faq">常见问题</a></li>
+            <li><a href="mailto:2718564960@qq.com" id="footer-contact-item">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container" id="footer-copyright-text">
+        <!-- Copyright text injected via app.js -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PAYMENT CHECKOUT DIALOG / MODAL (结账付款弹窗) ================= -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="checkout-modal">
+      
+      <!-- Checkout Active Panel -->
+      <div id="checkout-active-panel">
+        <div class="modal-header">
+          <div class="modal-title-box">
+            <h3 id="checkout-modal-title">安全结账付款</h3>
+            <span id="checkout-merchant-name">ShipFastAI - 支付结算中心</span>
+          </div>
+          <button class="modal-close-btn" id="checkout-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <!-- Order summary card -->
+          <div class="order-summary">
+            <div class="summary-details">
+              <h4 id="order-plan-name">专业创作者版 (Pro Plan)</h4>
+              <span id="order-plan-billing">按年计费 (Billed Annually)</span>
+            </div>
+            <div class="summary-amount" id="order-amount-display">
+              ¥399
+            </div>
+          </div>
+          
+          <!-- Pay Methods Switch Tabs -->
+          <div class="payment-tabs" id="payment-methods-tabs">
+            <!-- Tabs populated dynamically -->
+          </div>
+          
+          <!-- Alipay Scan Area -->
+          <div class="pay-panel active" id="pay-panel-alipay">
+            <div class="qr-code-container">
+              <!-- Inline SVG representing standard mockup code to look premium instead of random picture -->
+              <svg width="150" height="150" viewBox="0 0 100 100" style="background:#fff; padding:5px;">
+                <!-- QR Code corner eyes -->
+                <rect x="0" y="0" width="25" height="25" fill="#1677ff" />
+                <rect x="3" y="3" width="19" height="19" fill="#fff" />
+                <rect x="7" y="7" width="11" height="11" fill="#1677ff" />
+                
+                <rect x="75" y="0" width="25" height="25" fill="#1677ff" />
+                <rect x="78" y="3" width="19" height="19" fill="#fff" />
+                <rect x="82" y="7" width="11" height="11" fill="#1677ff" />
+                
+                <rect x="0" y="75" width="25" height="25" fill="#1677ff" />
+                <rect x="3" y="78" width="19" height="19" fill="#fff" />
+                <rect x="7" y="82" width="11" height="11" fill="#1677ff" />
+                
+                <!-- Mock QR content bits representing Alipay -->
+                <rect x="35" y="5" width="10" height="10" fill="#1677ff" />
+                <rect x="55" y="15" width="5" height="15" fill="#1677ff" />
+                <rect x="40" y="40" width="20" height="20" fill="#1677ff" />
+                <rect x="15" y="45" width="10" height="5" fill="#1677ff" />
+                <rect x="70" y="65" width="15" height="15" fill="#1677ff" />
+                <rect x="45" y="80" width="10" height="15" fill="#1677ff" />
+                <rect x="80" y="40" width="10" height="10" fill="#1677ff" />
+                <!-- Alipay inner logo representation -->
+                <rect x="42" y="42" width="16" height="16" fill="#fff" />
+                <path d="M46 54h8v2h-8z M50 44v10" stroke="#1677ff" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="qr-caption" id="alipay-scan-msg">
+              请打开手机使用 <b>支付宝</b> 扫码付款
+            </div>
+          </div>
+          
+          <!-- WeChat Pay Scan Area -->
+          <div class="pay-panel" id="pay-panel-wechat">
+            <div class="qr-code-container">
+              <svg width="150" height="150" viewBox="0 0 100 100" style="background:#fff; padding:5px;">
+                <!-- QR Code corner eyes -->
+                <rect x="0" y="0" width="25" height="25" fill="#07c160" />
+                <rect x="3" y="3" width="19" height="19" fill="#fff" />
+                <rect x="7" y="7" width="11" height="11" fill="#07c160" />
+                
+                <rect x="75" y="0" width="25" height="25" fill="#07c160" />
+                <rect x="78" y="3" width="19" height="19" fill="#fff" />
+                <rect x="82" y="7" width="11" height="11" fill="#07c160" />
+                
+                <rect x="0" y="75" width="25" height="25" fill="#07c160" />
+                <rect x="3" y="78" width="19" height="19" fill="#fff" />
+                <rect x="7" y="82" width="11" height="11" fill="#07c160" />
+                
+                <!-- Mock QR content bits representing WeChat -->
+                <rect x="45" y="8" width="15" height="5" fill="#07c160" />
+                <rect x="35" y="35" width="30" height="30" fill="#07c160" />
+                <rect x="15" y="35" width="5" height="15" fill="#07c160" />
+                <rect x="80" y="75" width="10" height="10" fill="#07c160" />
+                <rect x="70" y="45" width="5" height="15" fill="#07c160" />
+                <!-- WeChat inner logo representation -->
+                <circle cx="50" cy="50" r="8" fill="#fff"/>
+                <circle cx="48" cy="48" r="4" fill="#07c160"/>
+                <circle cx="53" cy="51" r="3" fill="#07c160"/>
+              </svg>
+            </div>
+            <div class="qr-caption" id="wechat-scan-msg">
+              请打开手机使用 <b>微信</b> 扫码付款
+            </div>
+          </div>
+          
+          <!-- Credit Card Input Fields -->
+          <div class="pay-panel" id="pay-panel-card">
+            <form class="credit-card-form" id="checkout-card-form" onsubmit="event.preventDefault();">
+              <div class="form-group">
+                <label for="cc-number" id="lbl-cc-number">卡号 (Card Number)</label>
+                <input type="text" id="cc-number" class="form-input" placeholder="4111 2222 3333 4444" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cc-expiry" id="lbl-cc-expiry">有效期 (MM/YY)</label>
+                  <input type="text" id="cc-expiry" class="form-input" placeholder="12/28" required>
+                </div>
+                <div class="form-group">
+                  <label for="cc-cvc" id="lbl-cc-cvc">安全码 (CVC)</label>
+                  <input type="text" id="cc-cvc" class="form-input" placeholder="123" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" id="btn-submit-card-pay">
+                支付此订单
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Checkout Success Panel -->
+      <div class="checkout-success-view" id="checkout-success-panel">
+        <div class="success-icon-ring">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="success-title" id="checkout-success-title">支付成功！</h3>
+        <p class="success-msg" id="checkout-success-msg">
+          您的专业版会员包已激活成功。订单收据及使用文档已发送至您的绑定账号中。
+        </p>
+        <button class="btn btn-primary" id="checkout-success-done-btn">完成并返回</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
