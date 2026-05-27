@@ -209,6 +209,17 @@ function renderApp() {
   const config = window.WEBSITE_CONFIG;
   const isEn = state.currentLang === 'en';
 
+  // 0. Render Announcement Bar (顶部公告栏)
+  const announceBox = document.getElementById('announcement-bar');
+  if (config.branding.announcement && config.branding.announcement.show) {
+    document.body.classList.add('has-announcement');
+    announceBox.style.display = 'flex';
+    announceBox.innerText = isEn ? config.branding.announcement.textEn : config.branding.announcement.text;
+  } else {
+    document.body.classList.remove('has-announcement');
+    announceBox.style.display = 'none';
+  }
+
   // 1. Render Brand/Nav logo
   const logoBox = document.getElementById('nav-logo');
   logoBox.innerHTML = `${config.branding.logoSvg} <span>${config.branding.name}</span>`;

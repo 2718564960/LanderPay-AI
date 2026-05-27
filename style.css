@@ -111,6 +111,32 @@ button, input, select, textarea {
   -webkit-backdrop-filter: blur(16px);
 }
 
+/* Announcement Bar */
+.announcement-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 101;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+  padding: 0 24px;
+}
+
+.announcement-bar a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin-left: 6px;
+  font-weight: 700;
+}
+
 /* Header & Navbar */
 header {
   position: fixed;
@@ -121,6 +147,14 @@ header {
   border-bottom: 1px solid var(--border-color);
   background-color: rgba(255, 255, 255, 0.8);
   transition: var(--transition);
+}
+
+body.has-announcement header {
+  top: 40px;
+}
+
+body.has-announcement .view-section {
+  padding-top: 140px;
 }
 
 body.dark header {
@@ -187,6 +221,7 @@ body.dark header {
 }
 
 .btn-primary {
+  background-color: var(--primary);
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);
 }

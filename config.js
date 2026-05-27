@@ -44,11 +44,18 @@ window.WEBSITE_CONFIG = {
   
   // Branding Metadata (品牌基本信息)
   branding: {
-    name: 'ShipFastAI',
+    name: 'LanderPay-AI',
     logoSvg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-presentation"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>`,
     github: 'https://github.com/2718564960',
     contactEmail: '2718564960@qq.com',
-    copyright: '© 2026 ShipFastAI. All rights reserved. Created by 2718564960@qq.com.'
+    copyright: '© 2026 LanderPay-AI. All rights reserved. Created by 2718564960@qq.com.',
+    
+    // Announcement top bar (顶部公告栏声明)
+    announcement: {
+      show: true,
+      text: '⚠️ 演示版本：这是一个高度可配置的模板。如有合作或技术支持需求，请联系：2718564960@qq.com',
+      textEn: '⚠️ Demo Version: This is a customizable boilerplate template. For support or inquiries, contact: 2718564960@qq.com'
+    }
   },
 
   // Navigation Links (导航栏链接)
